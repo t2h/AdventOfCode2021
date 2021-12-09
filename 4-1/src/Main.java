@@ -83,7 +83,7 @@ public class Main {
             System.out.println("Drawing a number... " + drawnNumber);
             for (Integer[][] board : boards) {
                 for (int row = 0; row < board.length && !finished; row++) {
-                    for (int col = 0; col < board[row].length; col++) {
+                    for (int col = 0; col < board.length; col++) {
                         if (board[row][col] == drawnNumber) {
                             System.out.println("Match with cell [" + row + "][" + col + "] on board " + boards.indexOf(board));
                             String[][] boardState = gameState.get(boards.indexOf(board));
